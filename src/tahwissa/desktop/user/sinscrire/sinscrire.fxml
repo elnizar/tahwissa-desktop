@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="437.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tahwissa.desktop.user.sinscrire.SinscrireController">
+   <children>
+      <ImageView fitHeight="437.0" fitWidth="627.0" layoutX="-3.0" layoutY="-1.0">
+         <image>
+            <Image url="@bg.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="nom" layoutX="107.0" layoutY="24.0" prefHeight="25.0" prefWidth="384.0" promptText="Nom" />
+      <JFXTextField fx:id="prenom" layoutX="107.0" layoutY="67.0" prefHeight="34.0" prefWidth="384.0" promptText="Prenom" />
+      <JFXTextField fx:id="email" layoutX="107.0" layoutY="123.0" prefHeight="25.0" prefWidth="384.0" promptText="Email" />
+      <JFXDatePicker fx:id="datenaissance" layoutX="107.0" layoutY="174.0" prefHeight="34.0" prefWidth="384.0" promptText="Date de naissance" />
+      <JFXRadioButton id="1" fx:id="homme" layoutX="118.0" layoutY="278.0" stylesheets="@sincrire.css" text="Homme">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton id="1" fx:id="femme" layoutX="250.0" layoutY="278.0" stylesheets="@sincrire.css" text="Femme" toggleGroup="$group" />
+      <JFXPasswordField fx:id="mdp" layoutX="107.0" layoutY="227.0" prefHeight="34.0" prefWidth="384.0" promptText="Mot de pass" />
+      <JFXButton fx:id="sinscrire" layoutX="207.0" layoutY="337.0" onAction="#sinscrireButton" prefHeight="54.0" prefWidth="153.0" stylesheets="@sincrire.css" text="       s'inscrire" textFill="#fcf9f9">
+         <font>
+            <Font size="18.0" />
+         </font></JFXButton>
+      <ImageView fitHeight="45.0" fitWidth="59.0" layoutX="211.0" layoutY="340.0">
+         <image>
+            <Image url="@../../../../../../Desktop/logo.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="retour" layoutY="5.0" onAction="#retourButton" prefHeight="54.0" prefWidth="82.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="45.0" fitWidth="53.0" layoutX="12.0" layoutY="13.0">
+         <image>
+            <Image url="@Retour.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

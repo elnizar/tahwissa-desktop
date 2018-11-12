@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="404.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tahwissa.desktop.consulterPublication.EmailController">
+   <children>
+      <Label layoutX="59.0" layoutY="85.0" prefHeight="20.0" prefWidth="78.0" text="Message :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="envoyersms" layoutX="201.0" layoutY="320.0" mnemonicParsing="false" onAction="#envoyersms" prefHeight="44.0" prefWidth="154.0" styleClass="blue-100" stylesheets="@../../../resources/css/jfoenix-design.css" text="         send" AnchorPane.rightAnchor="242.0" AnchorPane.topAnchor="320.0" />
+      <ImageView fitHeight="35.0" fitWidth="60.0" layoutX="213.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/img/email-icon-23.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="textsms" layoutX="47.0" layoutY="121.0" prefHeight="172.0" prefWidth="462.0" />
+   </children>
+</AnchorPane>

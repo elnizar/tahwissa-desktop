@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" cacheHint="SCALE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="996.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tahwissa.desktop.consulterPublication.MainController">
+    <children>
+      <AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="564.0" prefWidth="996.0">
+         <children>
+            <ImageView blendMode="MULTIPLY" fitHeight="572.0" fitWidth="1002.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bg.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="181.0" layoutY="20.0" prefHeight="525.0" prefWidth="739.0">
+               <children>
+                    <Button fx:id="button" layoutX="579.0" layoutY="5.0" onAction="#newPublication" opacity="0.0" prefHeight="25.0" prefWidth="129.0" text="Nouvelle Publication" />
+                    <Label fx:id="label" layoutX="96.0" layoutY="99.0" minHeight="16" minWidth="69" />
+                  <ListView fx:id="listPubs" layoutX="-13.0" layoutY="35.0" prefHeight="428.0" prefWidth="733.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </ListView>
+                  <Label layoutX="51.0" prefHeight="35.0" prefWidth="228.0" text="Liste des publications" textAlignment="CENTER" underline="true">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="256.0" layoutY="474.0" text="TAHWISSA&#10;-All Rights Reserved CopyRight-2017" textAlignment="CENTER" />
+                  <TextField fx:id="recherche" layoutX="528.0" layoutY="5.0" />
+                  <Text layoutX="398.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recherche par titre :" />
+               </children>
+            </Pane>
+            <JFXHamburger fx:id="hamburger" layoutX="920.0" layoutY="14.0" prefHeight="49.0" prefWidth="59.0" />
+            <JFXDrawer fx:id="drawer" prefHeight="451.0" prefWidth="173.0" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

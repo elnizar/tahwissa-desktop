@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tahwissa.desktop.signalisation.SignalisationController">
+   <children>
+      <ImageView fitHeight="455.0" fitWidth="708.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bg.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="signaler" layoutX="303.0" layoutY="345.0" onAction="#ajouterSignal" styleClass="blue-700" stylesheets="@../../../resources/css/jfoenix-design.css" text="signaler ce membre" />
+      <JFXTextArea fx:id="motif" layoutX="143.0" layoutY="184.0" prefHeight="141.0" prefWidth="441.0" />
+      <JFXTextField fx:id="objet" layoutX="248.0" layoutY="90.0" prefHeight="25.0" prefWidth="239.0" />
+      <Label layoutX="210.0" layoutY="41.0" text="Entrer l'objet de signalisation">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="208.0" layoutY="142.0" text="Taper le motif de signalisation">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

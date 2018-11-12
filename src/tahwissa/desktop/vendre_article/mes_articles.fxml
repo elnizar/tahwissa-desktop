@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="998.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tahwissa.desktop.vendre_article.MesArticlesController">
+   <children>
+      <ScrollPane prefHeight="561.0" prefWidth="600.0" AnchorPane.leftAnchor="170.0">
+        <content>
+          <AnchorPane>
+               <children>
+                  <VBox prefHeight="514.0" prefWidth="580.0" spacing="5.0">
+                     <children>
+                        <HBox fx:id="boxArticle1" prefHeight="164.0" prefWidth="575.0" style="-fx-border-color: #D59BF6; -fx-border-width: 2;">
+                           <children>
+                              <VBox prefHeight="146.0" prefWidth="156.0" style="-fx-border-color: #D59BF6; -fx-border-width: 2;">
+                                 <children>
+                                    <ImageView fx:id="imageArticle1" fitHeight="126.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label fx:id="libelleArticel1" style="-fx-background-color: #8EF6E4;" text="Ceci est le libelle">
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../resources/img/price-tag%20(1).png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font></Label>
+                                    <JFXTextField fx:id="libelleInputArticle1" visible="false">
+                                       <VBox.margin>
+                                          <Insets top="-21.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="176.0" prefWidth="395.0" spacing="1.0" style="-fx-border-color: #D59BF6; -fx-border-width: 2;">
+                                 <children>
+                                    <ScrollPane fitToHeight="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="44.0" prefWidth="380.0">
+                                      <content>
+                                        <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefWidth="365.0">
+                                             <children>
+                                                <Text fx:id="descriptionArticle1" layoutY="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in ipsum id orci porta dapibus. Donec rutrum congue leo eget malesuada. Nulla porttitor accumsan tincidunt. Sed porttitor lectus nibh. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus." wrappingWidth="369.13671875" AnchorPane.topAnchor="0.05078125" />
+                                                <JFXTextArea fx:id="textAreaArticle1" prefHeight="83.0" prefWidth="405.0" visible="false" />
+                                             </children>
+                                             <padding>
+                                                <Insets right="-11.0" />
+                                             </padding>
+                                          </AnchorPane>
+                                      </content>
+                                       <VBox.margin>
+                                          <Insets bottom="3.0" left="6.0" top="2.0" />
+                                       </VBox.margin>
+                                    </ScrollPane>
+                                    <HBox spacing="57.0">
+                                       <children>
+                                          <Label fx:id="prixArticle1" text="Ceci est le prix">
+                                             <HBox.margin>
+                                                <Insets left="3.0" />
+                                             </HBox.margin>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/price-tag.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                          <JFXTextField fx:id="inputPrixArticle1" visible="false" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox spacing="58.0">
+                                       <children>
+                                          <Label fx:id="etatArticle1" text="Ceci est l'etat du produit !">
+                                             <HBox.margin>
+                                                <Insets left="3.0" />
+                                             </HBox.margin>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/contract.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                          <JFXTextField fx:id="inputEtatArticle1" visible="false" />
+                                       </children>
+                                    </HBox>
+                                    <HBox spacing="254.0">
+                                       <children>
+                                          <Label fx:id="venduArticle1" text="Vendu">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="6.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label fx:id="boostedArticle1" text="Boosted">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/badge.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" spacing="51.0">
+                                       <children>
+                                          <JFXButton fx:id="venduBtnArticle1" prefHeight="28.0" prefWidth="92.0" style="-fx-background-color: #8EF6E4;" text="Vendu">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/sold.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <padding>
+                                                <Insets left="-8.0" />
+                                             </padding>
+                                             <HBox.margin>
+                                                <Insets left="3.0" />
+                                             </HBox.margin>
+                                          </JFXButton>
+                                          <JFXButton fx:id="suppBtnArticle1" prefHeight="28.0" prefWidth="104.0" style="-fx-background-color: #EDB1F1;" text="Supprimer">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/cart%20(1).png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </JFXButton>
+                                          <JFXButton fx:id="boosterBtnArticle1" style="-fx-background-color: #D59BF6;" text="Booster">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/promotion.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </JFXButton>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="3.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="boxArticle2" prefHeight="164.0" prefWidth="575.0" style="-fx-border-color: #D59BF6; -fx-border-width: 2;">
+                           <children>
+                              <VBox prefHeight="146.0" prefWidth="156.0" style="-fx-border-color: #D59BF6; -fx-border-width: 2;">
+                                 <children>
+                                    <ImageView fitHeight="126.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label style="-fx-background-color: #8EF6E4;" text="Ceci est le libelle">
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../resources/img/price-tag%20(1).png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="176.0" prefWidth="395.0" spacing="1.0" style="-fx-border-color: #D59BF6; -fx-border-width: 2;">
+                                 <children>
+                                    <ScrollPane fitToHeight="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="44.0" prefWidth="380.0">
+                                       <content>
+                                          <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefWidth="365.0">
+                                             <children>
+                                                <Text layoutY="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in ipsum id orci porta dapibus. Donec rutrum congue leo eget malesuada. Nulla porttitor accumsan tincidunt. Sed porttitor lectus nibh. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus." wrappingWidth="369.13671875" AnchorPane.topAnchor="0.05078125" />
+                                                <JFXTextArea prefHeight="83.0" prefWidth="405.0" visible="false" />
+                                             </children>
+                                             <padding>
+                                                <Insets right="-11.0" />
+                                             </padding>
+                                          </AnchorPane>
+                                       </content>
+                                       <VBox.margin>
+                                          <Insets bottom="3.0" left="6.0" top="2.0" />
+                                       </VBox.margin>
+                                    </ScrollPane>
+                                    <HBox spacing="57.0">
+                                       <children>
+                                          <Label text="Ceci est le prix">
+                                             <HBox.margin>
+                                                <Insets left="4.0" />
+                                             </HBox.margin>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/price-tag.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                          <JFXTextField visible="false" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox spacing="58.0">
+                                       <children>
+                                          <JFXTextField visible="false" />
+                                          <Label text="Ceci est l'etat du produit !">
+                                             <HBox.margin>
+                                                <Insets left="-189.0" />
+                                             </HBox.margin>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/contract.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox spacing="254.0">
+                                       <children>
+                                          <Label text="Vendu">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="6.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label text="Boosted">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/badge.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" spacing="51.0">
+                                       <children>
+                                          <JFXButton prefHeight="28.0" prefWidth="92.0" style="-fx-background-color: #8EF6E4;" text="Vendu">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/sold.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <padding>
+                                                <Insets left="-8.0" />
+                                             </padding>
+                                             <HBox.margin>
+                                                <Insets left="3.0" />
+                                             </HBox.margin>
+                                          </JFXButton>
+                                          <JFXButton prefHeight="28.0" prefWidth="104.0" style="-fx-background-color: #EDB1F1;" text="Supprimer">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/cart%20(1).png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </JFXButton>
+                                          <JFXButton style="-fx-background-color: #D59BF6;" text="Booster">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/promotion.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </JFXButton>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="3.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="boxArticle3" prefHeight="164.0" prefWidth="575.0" style="-fx-border-color: #D59BF6; -fx-border-width: 2;">
+                           <children>
+                              <VBox prefHeight="146.0" prefWidth="156.0" spacing="1.0" style="-fx-border-color: #D59BF6; -fx-border-width: 2;">
+                                 <children>
+                                    <ImageView fitHeight="126.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label style="-fx-background-color: #8EF6E4;" text="Ceci est le libelle">
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../resources/img/price-tag%20(1).png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="176.0" prefWidth="395.0" spacing="1.0" style="-fx-border-color: #D59BF6; -fx-border-width: 2;">
+                                 <children>
+                                    <ScrollPane fitToHeight="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="44.0" prefWidth="380.0">
+                                       <content>
+                                          <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefWidth="365.0">
+                                             <children>
+                                                <Text layoutY="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in ipsum id orci porta dapibus. Donec rutrum congue leo eget malesuada. Nulla porttitor accumsan tincidunt. Sed porttitor lectus nibh. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus." wrappingWidth="369.13671875" AnchorPane.topAnchor="0.05078125" />
+                                                <JFXTextArea prefHeight="83.0" prefWidth="405.0" visible="false" />
+                                             </children>
+                                             <padding>
+                                                <Insets right="-11.0" />
+                                             </padding>
+                                          </AnchorPane>
+                                       </content>
+                                       <VBox.margin>
+                                          <Insets bottom="3.0" left="6.0" top="2.0" />
+                                       </VBox.margin>
+                                    </ScrollPane>
+                                    <HBox spacing="57.0">
+                                       <children>
+                                          <Label text="Ceci est le prix">
+                                             <HBox.margin>
+                                                <Insets left="4.0" />
+                                             </HBox.margin>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/price-tag.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                          <JFXTextField visible="false" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox spacing="58.0">
+                                       <children>
+                                          <JFXTextField visible="false" />
+                                          <Label text="Ceci est l'etat du produit !">
+                                             <HBox.margin>
+                                                <Insets left="-189.0" />
+                                             </HBox.margin>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/contract.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox spacing="254.0">
+                                       <children>
+                                          <Label text="Vendu">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="6.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label text="Boosted">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/badge.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" spacing="51.0">
+                                       <children>
+                                          <JFXButton prefHeight="28.0" prefWidth="92.0" style="-fx-background-color: #8EF6E4;" text="Vendu">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/sold.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <padding>
+                                                <Insets left="-8.0" />
+                                             </padding>
+                                             <HBox.margin>
+                                                <Insets left="3.0" />
+                                             </HBox.margin>
+                                          </JFXButton>
+                                          <JFXButton prefHeight="28.0" prefWidth="104.0" style="-fx-background-color: #EDB1F1;" text="Supprimer">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/cart%20(1).png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </JFXButton>
+                                          <JFXButton style="-fx-background-color: #D59BF6;" text="Booster">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/promotion.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </JFXButton>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="3.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Pagination prefHeight="18.0" prefWidth="575.0" />
+                     </children>
+                     <padding>
+                        <Insets left="5.0" top="3.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <JFXHamburger fx:id="hamburger" layoutX="930.0" layoutY="24.0" prefHeight="49.0" prefWidth="59.0" />
+      <JFXDrawer fx:id="drawer" layoutX="10.0" layoutY="10.0" prefHeight="451.0" prefWidth="167.0" />
+      <ImageView blendMode="MULTIPLY" fitHeight="615.0" fitWidth="998.0" layoutX="1.0" layoutY="10.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../bg.png" />
+         </image>
+      </ImageView>
+      <StackPane fx:id="stackPane" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" visible="false" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tahwissa.desktop.commentevent.CommentEventController">
+    <stylesheets>
+        <URL value="@commentevent.css" />
+    </stylesheets>
+   <children>
+      <JFXTextArea fx:id="zone" layoutX="31.0" layoutY="167.0" />
+      <JFXButton fx:id="ajout" layoutX="513.0" layoutY="188.0" text="ajouter commentaire" />
+      <JFXButton fx:id="modif" layoutX="513.0" layoutY="223.0" text="modifier commentaire" />
+      <JFXButton fx:id="supp" layoutX="513.0" layoutY="261.0" text="supprimer commentaire" />
+   </children>
+</AnchorPane>

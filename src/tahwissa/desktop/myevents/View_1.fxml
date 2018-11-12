@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="638.0" prefWidth="1211.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tahwissa.desktop.myevents.MyEventsController">
+   <children>
+      <JFXDrawer fx:id="drawer" prefHeight="451.0" prefWidth="167.0" />
+      <ImageView blendMode="MULTIPLY" fitHeight="681.0" fitWidth="1231.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" styleClass="deep-purple-600">
+         <image>
+            <Image url="@../bg.png" />
+         </image>
+      </ImageView>
+      <JFXHamburger fx:id="hamburger" layoutX="1142.0" layoutY="-1.0" prefHeight="51.0" prefWidth="61.0" />
+      <Label layoutX="552.0" layoutY="14.0" text="Mes évènements">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <JFXTreeTableView fx:id="treeView" layoutX="240.0" layoutY="79.0" prefHeight="493.0" prefWidth="884.0" />
+      <ImageView fitHeight="43.0" fitWidth="46.0" layoutX="400.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/img/delete.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="46.0" layoutX="661.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/img/enter.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="46.0" layoutX="922.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/img/e.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="452.0" layoutY="607.0" text="Supprimer" />
+      <Label layoutX="711.0" layoutY="607.0" text="Détails" />
+      <Label layoutX="971.0" layoutY="607.0" text="Modifier" />
+      <StackPane fx:id="stackPane" mouseTransparent="true" prefHeight="681.0" prefWidth="1211.0" />
+   </children>
+   <stylesheets>
+      <URL value="@../../../resources/css/jfoenix-design.css" />
+      <URL value="@../../../resources/css/treeTableView.css" />
+   </stylesheets>
+</AnchorPane>

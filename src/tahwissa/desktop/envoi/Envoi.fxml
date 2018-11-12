@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="334.0" prefWidth="554.0" styleClass="white" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tahwissa.desktop.envoi.EnvoieController">
+   <children>
+      <ImageView fitHeight="551.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bg.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="comboemail" layoutX="163.0" layoutY="79.0" prefHeight="25.0" prefWidth="247.0" />
+      <JFXTextArea fx:id="ContenuMsg" layoutX="69.0" layoutY="161.0" prefHeight="109.0" prefWidth="433.0" styleClass="white" />
+      <Label layoutX="204.0" layoutY="44.0" prefHeight="17.0" prefWidth="164.0" text="sélectionner votre destinataire" />
+      <JFXButton layoutX="265.0" layoutY="298.0" onAction="#ajouter" styleClass="blue-700" text="Envoyer" textFill="#373937" />
+   </children>
+   <stylesheets>
+      <URL value="@envoi.css" />
+      <URL value="@../../../resources/css/jfoenix-design.css" />
+   </stylesheets>
+</AnchorPane>

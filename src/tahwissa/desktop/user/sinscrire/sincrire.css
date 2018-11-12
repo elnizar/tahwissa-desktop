@@ -1,0 +1,15 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.jfx-button{
+    -fx-background-color: #B39DDB;
+}
+
+.jfx-button:hover{
+    -fx-background-color: blue;
+}
+.jfx-radio-button {
+    -fx-selected-color: red;
+    -fx-unselected-color: yellow;
+}

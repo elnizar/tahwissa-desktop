@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0329d6c4-0287-47c5-ae2a-1b46d9276708" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/commons-net-3.1-ftp.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/apache-mime4j-0.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/bsh-2.0b4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cglib-nodep-2.1_3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/commons-codec-1.10.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/commons-exec-1.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/commons-io-2.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/commons-logging-1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/gson-2.3.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/guava-19.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hamcrest-core-1.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hamcrest-library-1.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpclient-4.5.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcore-4.4.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpmime-4.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.mail-api-1.5.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jcommander-1.48.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jfoenix.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jna-4.1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jna-platform-4.1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.12.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/mail.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/netty-3.5.7.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/phantomjsdriver-1.2.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/restfb-1.18.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/selenium-java-2.53.0-srcs.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/selenium-java-2.53.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/testng-6.9.9.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/vianett_sms_v2_1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/img/profile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/Facebook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/Retour.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/coin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/drawer.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/facebook .png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/inscrire.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/modifier/Retour.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/modifier/Retour_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/modifier/bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/modifier/coin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/modifier/pencil.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/modifier/picture.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/modifier/update.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/modifier/update_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/pencil.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/sinscrire/Retour.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/sinscrire/bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/sinscrire/left-arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/user-icon-6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/user-icon-6_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/entity/Bannir.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/entity/CommentEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/entity/Commentaire.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/entity/CommentaireDB.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/entity/ImageDB.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/entity/Publication.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/entity/PublicationDB.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/entity/SendMail.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/entity/Signalisation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/entity/email.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/service/CommentEventService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/service/CommentEventServiceInterface.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/service/SignalisationService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/service/SignalisationServiceInterface.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/admin/AfficheController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/admin/TahwissaDesktop.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/admin/affiche.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/admin/affiche.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/admin/ajout/Aprouver.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/admin/ajout/AprouverController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/admin/ajout/AprouverFinal.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/admin/ajout/AprouverFinalController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/admin/ajout/aprouver.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/admin/ajout/aprouverfinal.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/admin/ajouter/AjouterUser.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/admin/ajouter/AjouterUser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/admin/ajouter/editer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/admin/modifier/EditerController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/admin/supprimer/Banned.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/admin/supprimer/BannedController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/admin/supprimer/banned.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/apipaypal/CompteController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/apipaypal/TahwissaDesktop.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/apipaypal/compte.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/apipaypal/submit.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/commentevent/CommentEventController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/commentevent/commentevent.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/consulterPublication/DetailsPublication.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/consulterPublication/DetailsPublicationController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/consulterPublication/DetailsPublicationController1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/consulterPublication/DetailsPublication_1.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/consulterPublication/EditPublication.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/consulterPublication/EditPublicationController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/consulterPublication/EmailController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/consulterPublication/ListCell.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/consulterPublication/MainController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/consulterPublication/MainPublications.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/consulterPublication/NewPublication.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/consulterPublication/NewPublicationController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/consulterPublication/PublicationListViewCell.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/consulterPublication/email.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/consulterPublication/sms.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/envoi/Envoi.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/signalisation/Signaler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/signalisation/Signalisation.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/signalisation/SignalisationController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/DrawerContent.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/DrawerController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/LoginController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/Profile.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/ProfileController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/SignupFacebbokController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/TahwissaDesktop.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/drawer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/login.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/modifier/EditController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/modifier/edit.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/modifier/edit.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/profile.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/signupFacebbok.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/signupfacebbok.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/sinscrire/SinscrireController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/sinscrire/TahwissaDesktop.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/sinscrire/sincrire.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/sinscrire/sinscrire.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/user/splashScreen.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/util/MailApi.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/util/SmsSender.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/util/Tahwissa.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/envoi/Envoi.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/tahwissa/desktop/envoi/Envoi.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/tahwissa/desktop/envoi/EnvoiController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/lib/commons-net-3.1.jar" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/envoi/Envoi.fxml" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/commentevent/CommentEvent.fxml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/envoi/Envoi.java" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/envoi/Envoie.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/envoi/EnvoiController.java" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/envoi/EnvoieController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/entity/Messagerie.class" afterPath="$PROJECT_DIR$/build/classes/entity/Messagerie.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/entity/User.class" afterPath="$PROJECT_DIR$/build/classes/entity/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/service/EvenementService.class" afterPath="$PROJECT_DIR$/build/classes/service/EvenementService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/service/ImageService.class" afterPath="$PROJECT_DIR$/build/classes/service/ImageService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/service/MessagerieService.class" afterPath="$PROJECT_DIR$/build/classes/service/MessagerieService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/service/MessagerieServiceInterface.class" afterPath="$PROJECT_DIR$/build/classes/service/MessagerieServiceInterface.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/service/UserService.class" afterPath="$PROJECT_DIR$/build/classes/service/UserService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/tahwissa/desktop/inbox/View_InboxController.class" afterPath="$PROJECT_DIR$/build/classes/tahwissa/desktop/inbox/View_InboxController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/tahwissa/desktop/modifierrando/ModifierController.class" afterPath="$PROJECT_DIR$/build/classes/tahwissa/desktop/modifierrando/ModifierController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/tahwissa/desktop/organiser/OrganiserController.class" afterPath="$PROJECT_DIR$/build/classes/tahwissa/desktop/organiser/OrganiserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/img/price-tag.png" afterPath="$PROJECT_DIR$/src/resources/img/price-tag.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/img/promotion.png" afterPath="$PROJECT_DIR$/src/resources/img/promotion.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/built-jar.properties" afterPath="$PROJECT_DIR$/build/built-jar.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/tahwissa/desktop/consulterevents/View_1.fxml" afterPath="$PROJECT_DIR$/build/classes/tahwissa/desktop/consulterevents/View_1.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/tahwissa/desktop/detailsevent/View.fxml" afterPath="$PROJECT_DIR$/build/classes/tahwissa/desktop/detailsevent/View.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/tahwissa/desktop/inbox/View_Inbox.fxml" afterPath="$PROJECT_DIR$/build/classes/tahwissa/desktop/inbox/View_Inbox.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/tahwissa/desktop/mesparticipations/View.fxml" afterPath="$PROJECT_DIR$/build/classes/tahwissa/desktop/mesparticipations/View.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/tahwissa-desktop.html" afterPath="$PROJECT_DIR$/dist/tahwissa-desktop.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/tahwissa-desktop.jnlp" afterPath="$PROJECT_DIR$/dist/tahwissa-desktop.jnlp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/private/private.properties" afterPath="$PROJECT_DIR$/nbproject/private/private.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/private/private.xml" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/private/retriever/catalog.xml" afterPath="$PROJECT_DIR$/nbproject/private/retriever/catalog.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/private/retriever/www.oracle.com/technetwork/java/javase/overview/index.html" afterPath="$PROJECT_DIR$/nbproject/private/retriever/www.oracle.com/technetwork/java/javase/overview/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/project.properties" afterPath="$PROJECT_DIR$/nbproject/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/Image.java" afterPath="$PROJECT_DIR$/src/entity/Image.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/Messagerie.java" afterPath="$PROJECT_DIR$/src/entity/Messagerie.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/User.java" afterPath="$PROJECT_DIR$/src/entity/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/EvenementService.java" afterPath="$PROJECT_DIR$/src/service/EvenementService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/ImageService.java" afterPath="$PROJECT_DIR$/src/service/ImageService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/ImageServiceInterface.java" afterPath="$PROJECT_DIR$/src/service/ImageServiceInterface.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/ImageShopService.java" afterPath="$PROJECT_DIR$/src/service/ImageShopService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/MessagerieService.java" afterPath="$PROJECT_DIR$/src/service/MessagerieService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/MessagerieServiceInterface.java" afterPath="$PROJECT_DIR$/src/service/MessagerieServiceInterface.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/TestService.java" afterPath="$PROJECT_DIR$/src/service/TestService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/UserService.java" afterPath="$PROJECT_DIR$/src/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tahwissa/desktop/DrawerController.java" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/DrawerController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tahwissa/desktop/FXMLDocumentController.java" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/FXMLDocumentController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tahwissa/desktop/LoginManager.java" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/LoginManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tahwissa/desktop/boutique/BoutiqueController.java" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/boutique/BoutiqueController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tahwissa/desktop/boutique/boutique.fxml" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/boutique/boutique.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tahwissa/desktop/consulterevents/View_1.fxml" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/consulterevents/View_1.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tahwissa/desktop/detailsevent/View.fxml" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/detailsevent/View.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tahwissa/desktop/inbox/View_Inbox.fxml" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/inbox/View_Inbox.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tahwissa/desktop/inbox/View_InboxController.java" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/inbox/View_InboxController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tahwissa/desktop/mesArticles/MesArticlesController.java" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/mesArticles/MesArticlesController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tahwissa/desktop/mesArticles/mes_articles.fxml" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/mesArticles/mes_articles.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tahwissa/desktop/mes_achats/AchatsController.java" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/mes_achats/AchatsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tahwissa/desktop/mesparticipations/View.fxml" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/mesparticipations/View.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tahwissa/desktop/modifierrando/ModifierController.java" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/modifierrando/ModifierController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tahwissa/desktop/organiser/OrganiserController.java" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/organiser/OrganiserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tahwissa/desktop/vendre_article/VenteController.java" afterPath="$PROJECT_DIR$/src/tahwissa/desktop/vendre_article/VenteController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/util/MyConnection.java" afterPath="$PROJECT_DIR$/src/util/MyConnection.java" />
+    </list>
+    <ignored path="tahwissa-desktop.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="tahwissa-desktop" />
+  </component>
+  <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tahwissa-desktop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tahwissa-desktop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tahwissa-desktop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0329d6c4-0287-47c5-ae2a-1b46d9276708" name="Default" comment="" />
+      <created>1493934157863</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1493934157863</updated>
+      <workItem from="1493934159636" duration="1127000" />
+      <workItem from="1494089745137" duration="2920000" />
+      <workItem from="1494799258917" duration="143000" />
+    </task>
+    <task id="LOCAL-00001" summary="Mon travail java desktop">
+      <created>1493934355562</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1493934355562</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Mon travail java desktop">
+      <created>1493934500406</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1493934500406</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4190000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Mon travail java desktop" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mon travail java desktop" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+</project>

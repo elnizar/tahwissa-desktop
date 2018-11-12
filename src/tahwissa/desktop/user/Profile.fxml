@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="437.0" prefWidth="620.0" style="-fx-background-color: #3498db;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tahwissa.desktop.user.ProfileController">
+    <stylesheets>
+        <URL value="@profile.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="501.0" fitWidth="776.0" layoutX="-6.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.png" />
+         </image>
+      </ImageView>
+      <JFXHamburger fx:id="hamburger" layoutX="726.0" layoutY="14.0" />
+      <JFXDrawer fx:id="drawer" prefHeight="436.0" prefWidth="202.0" />
+      <Text fx:id="name" layoutX="226.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mhiri Mhiri" wrappingWidth="133.13671875">
+         <font>
+            <Font size="27.0" />
+         </font></Text>
+      <JFXButton fx:id="editer" layoutX="385.0" layoutY="64.0" onAction="#editerButton" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: #3498db;" text="Editer             " textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></JFXButton>
+      <GridPane layoutX="238.0" layoutY="260.0" prefHeight="158.0" prefWidth="202.0" style="-fx-background-color: ;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="106.0" minWidth="10.0" prefWidth="83.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="91.0" minWidth="10.0" prefWidth="81.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="34.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Profile" />
+            <Label text="Email" GridPane.rowIndex="1" />
+            <Label text="Date naissance" GridPane.rowIndex="2" />
+            <Text fx:id="email" strokeType="OUTSIDE" strokeWidth="0.0" text="testt@test" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Text fx:id="dateNaissance" strokeType="OUTSIDE" strokeWidth="0.0" text="22-4477-7" wrappingWidth="101.87890625" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Line endX="350.0" endY="-0.0" layoutX="335.0" layoutY="301.0" startX="-100.0" />
+      <Line endX="350.0" layoutX="335.0" layoutY="338.0" startX="-100.0" />
+      <Line endX="350.0" layoutX="335.0" layoutY="383.0" startX="-100.0" />
+      <GridPane layoutX="437.0" layoutY="155.0" prefHeight="47.0" prefWidth="252.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text fx:id="interet" strokeType="OUTSIDE" strokeWidth="0.0" text="Rien" GridPane.rowIndex="1" />
+            <Label text="Interet" />
+         </children>
+      </GridPane>
+      <Line endX="250.0" layoutX="430.0" layoutY="179.0" startX="10.0" />
+      <JFXButton layoutX="528.0" layoutY="64.0" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: #B6CDBD;" text="Mon Compte          " textFill="#fffefe" />
+      <ImageView fx:id="photo" fitHeight="158.0" fitWidth="261.0" layoutX="226.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@user-icon-6.png" />
+         </image></ImageView>
+      <JFXButton fx:id="deconnecter" layoutX="560.0" layoutY="12.0" onAction="#deconnecterButton" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: #3498db;" text="Deconnecter" textFill="WHITE" />
+      <ImageView fitHeight="20.0" fitWidth="23.0" layoutX="474.0" layoutY="73.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pencil.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="620.0" layoutY="64.0">
+         <image>
+            <Image url="@coin.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

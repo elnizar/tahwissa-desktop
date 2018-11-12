@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.lynden.gmapsfx.GoogleMapView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="638.0" prefWidth="1211.0" stylesheets="@../../../resources/css/jfoenix-design.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tahwissa.desktop.organiser.OrganiserController">
+   <children>
+      <JFXDrawer fx:id="drawer" prefHeight="451.0" prefWidth="167.0" />
+      <ImageView blendMode="MULTIPLY" fitHeight="681.0" fitWidth="1231.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" styleClass="deep-purple-600">
+         <image>
+            <Image url="@../bg.png" />
+         </image>
+      </ImageView>
+      <JFXTabPane fx:id="tabpane" layoutX="240.0" layoutY="-1.0" prefHeight="634.0" prefWidth="902.0">
+         <tabs>
+            <Tab styleClass="deep-purple-600" text="             Informations générales             ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1079.0">
+                     <children>
+                        <JFXTextField fx:id="nbPlaces" focusColor="#462391" labelFloat="true" layoutX="30.0" layoutY="14.0" prefHeight="29.0" prefWidth="174.0" promptText="Nombre de places" style="-fx-prompt-text-fill: #462391;" />
+                        <JFXTextField fx:id="frais" focusColor="#462391" labelFloat="true" layoutX="235.0" layoutY="14.0" prefHeight="29.0" prefWidth="258.0" promptText="Frais de participation" style="-fx-prompt-text-fill: #462391;" />
+                        <JFXTextField fx:id="lieuRassemblement" focusColor="#462391" labelFloat="true" layoutX="524.0" layoutY="14.0" prefHeight="29.0" prefWidth="300.0" promptText="Lieu de rassemblement" style="-fx-prompt-text-fill: #462391;" />
+                        <Label layoutX="30.0" layoutY="85.0" text="Départ :" />
+                        <JFXDatePicker fx:id="dateDepart" defaultColor="#462391" layoutX="101.0" layoutY="82.0" prefHeight="30.0" prefWidth="153.0" />
+                        <JFXTextArea fx:id="description" focusColor="#462391" labelFloat="true" layoutX="439.0" layoutY="85.0" prefHeight="163.0" prefWidth="426.0" promptText="Description" style="-fx-prompt-text-fill: #462391;" />
+                        <JFXTextArea fx:id="reglement" focusColor="#462391" labelFloat="true" layoutX="438.0" layoutY="291.0" prefHeight="163.0" prefWidth="427.0" promptText="Règlement" style="-fx-prompt-text-fill: #462391;" />
+                        <Label layoutX="258.0" layoutY="87.0" text="à" />
+                        <JFXDatePicker fx:id="heureDepart" defaultColor="#462391" layoutX="279.0" layoutY="82.0" prefHeight="30.0" prefWidth="153.0" showTime="true" />
+                        <AnchorPane fx:id="campingform" layoutX="14.0" layoutY="167.0" prefHeight="404.0" prefWidth="356.0">
+                           <children>
+                              <JFXTextField fx:id="nbj" disable="true" focusColor="#462391" labelFloat="true" layoutX="92.0" layoutY="54.0" prefHeight="29.0" prefWidth="209.0" promptText="Nombre de jours" style="-fx-prompt-text-fill: #462391;" />
+                              <JFXTextField fx:id="typeRando" disable="true" focusColor="#462391" labelFloat="true" layoutX="97.0" layoutY="152.0" prefHeight="29.0" prefWidth="200.0" promptText="Type randonnée" style="-fx-prompt-text-fill: #462391;" />
+                              <JFXCheckBox fx:id="randonnee" layoutX="116.0" layoutY="103.0" onAction="#randonneeSelected" text="Randonnée" />
+                              <JFXTextField fx:id="distanceParcourue" disable="true" focusColor="#462391" labelFloat="true" layoutX="100.0" layoutY="202.0" prefHeight="29.0" prefWidth="194.0" promptText="Distance parcourue" style="-fx-prompt-text-fill: #462391;" />
+                              <JFXComboBox fx:id="difficulte" disable="true" focusColor="#462391" labelFloat="true" layoutX="100.0" layoutY="260.0" prefHeight="31.0" prefWidth="182.0" promptText="Difficulté" style="-fx-prompt-text-fill: #462391;" />
+                              <JFXCheckBox fx:id="camping" layoutX="124.0" layoutY="14.0" onAction="#campingSelected" text="Camping" />
+                           </children>
+                        </AnchorPane>
+                        <JFXButton fx:id="uploadButton" layoutX="329.0" layoutY="500.0" onAction="#openFileDialog" prefHeight="41.0" prefWidth="253.0" styleClass="deep-purple-600" text="Ajouter des images.." />
+                        <Label fx:id="filesLabel" layoutX="436.0" layoutY="561.0" text="here" textAlignment="CENTER" />
+                        <Label fx:id="dateDepartError" layoutX="218.0" layoutY="127.0" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab disable="true" styleClass="deep-purple-500" text="                   Destination                   ">
+               <content>
+                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GoogleMapView fx:id="mapView" />
+                     </children>
+                   </AnchorPane>
+               </content>
+            </Tab>
+            <Tab styleClass="deep-purple-600" text="                   Planning                           ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="868.0">
+                     <children>
+                        <ScrollPane blendMode="MULTIPLY" hbarPolicy="NEVER" prefHeight="482.0" prefWidth="869.0" vbarPolicy="ALWAYS">
+                          <content>
+                            <AnchorPane fx:id="creneaux" minHeight="0.0" minWidth="0.0" prefHeight="516.0" prefWidth="862.0">
+                                 <children>
+                                    <Label layoutX="108.0" layoutY="14.0" prefHeight="33.0" prefWidth="61.0" text="Début" />
+                                    <Label layoutX="434.0" layoutY="14.0" prefHeight="33.0" prefWidth="29.0" text="Fin" />
+                                    <Label layoutX="675.0" layoutY="14.0" prefHeight="33.0" prefWidth="82.0" text="Description" />
+                                    <Separator layoutX="290.0" orientation="VERTICAL" prefHeight="594.0" prefWidth="2.0" />
+                                    <Separator layoutX="589.0" orientation="VERTICAL" prefHeight="594.0" prefWidth="1.0" />
+                                    <Separator fx:id="separator" layoutY="46.0" prefHeight="3.0" prefWidth="859.0" />
+                                    <Label fx:id="debutLe0" layoutX="7.0" layoutY="63.0" text="Le" />
+                                    <JFXDatePicker fx:id="dateDebut0" layoutX="34.0" layoutY="59.0" prefHeight="30.0" prefWidth="112.0" />
+                                    <Label fx:id="debutA0" layoutX="154.0" layoutY="63.0" text="à" />
+                                    <JFXDatePicker fx:id="heureDebut0" layoutX="181.0" layoutY="59.0" prefHeight="30.0" prefWidth="112.0" showTime="true" />
+                                    <Label fx:id="finLe0" layoutX="306.0" layoutY="63.0" text="Le" />
+                                    <JFXDatePicker fx:id="dateFin0" layoutX="333.0" layoutY="59.0" prefHeight="30.0" prefWidth="112.0" />
+                                    <Label fx:id="finA0" layoutX="453.0" layoutY="63.0" text="à" />
+                                    <JFXDatePicker fx:id="heureFin0" layoutX="480.0" layoutY="59.0" prefHeight="30.0" prefWidth="112.0" showTime="true" />
+                                    <JFXTextArea fx:id="description0" layoutX="615.0" layoutY="44.0" prefHeight="39.0" prefWidth="224.0" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                        <JFXButton fx:id="submit" layoutX="380.0" layoutY="541.0" onAction="#handleForm" prefHeight="51.0" prefWidth="200.0" styleClass="deep-purple-600" text="Valider" />
+                        <Label fx:id="planningError" layoutX="153.0" layoutY="514.0" prefHeight="21.0" prefWidth="654.0" textAlignment="CENTER" />
+                        <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="840.0" layoutY="503.0" onMouseClicked="#addCreneau" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../resources/img/add-square-button.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="807.0" layoutY="503.0" onMouseClicked="#deleteCreneau" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../resources/img/substraction.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+      <JFXHamburger fx:id="hamburger" layoutX="1142.0" layoutY="-1.0" prefHeight="51.0" prefWidth="61.0" />
+      <ImageView fx:id="next" fitHeight="36.0" fitWidth="43.0" layoutX="232.0" layoutY="630.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/img/right-arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="prev" fitHeight="36.0" fitWidth="36.0" layoutX="1069.0" layoutY="630.0" onMouseClicked="#next" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/img/right-arrow.png" />
+         </image>
+      </ImageView>
+      <Separator prefWidth="200.0" />
+   </children>
+</AnchorPane>

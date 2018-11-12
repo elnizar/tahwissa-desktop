@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tahwissa.desktop.user.modifier.EditController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@bg.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="nom" layoutX="127.0" layoutY="24.0" prefHeight="25.0" prefWidth="294.0" text="Nom" />
+      <JFXTextField fx:id="prenom" layoutX="127.0" layoutY="73.0" prefHeight="25.0" prefWidth="294.0" text="Prenom" />
+      <JFXButton fx:id="edit" layoutX="14.0" layoutY="318.0" onAction="#editButton" prefHeight="64.0" prefWidth="150.0">
+         <font>
+            <Font size="1.0" />
+         </font></JFXButton>
+      <JFXTextArea fx:id="interet" layoutX="126.0" layoutY="228.0" prefHeight="64.0" prefWidth="294.0" text="&#10;&#10;Vous puvez écrire un message" />
+      <JFXButton fx:id="browse" layoutX="439.0" layoutY="168.0" onAction="#browseButton" prefHeight="64.0" prefWidth="115.0">
+         <font>
+            <Font size="1.0" />
+         </font></JFXButton>
+      <ImageView fx:id="imageView" fitHeight="39.0" fitWidth="47.0" layoutX="477.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@picture.png" />
+         </image></ImageView>
+      <Label fx:id="filesLabel" layoutX="381.0" layoutY="247.0" prefHeight="31.0" prefWidth="150.0" />
+      <JFXPasswordField fx:id="mdp" layoutX="126.0" layoutY="121.0" prefHeight="25.0" prefWidth="294.0" />
+      <JFXPasswordField fx:id="mdp1" layoutX="126.0" layoutY="175.0" prefHeight="25.0" prefWidth="294.0" />
+      <JFXButton fx:id="retour" layoutX="14.0" layoutY="24.0" onAction="#retourButton" prefHeight="51.0" prefWidth="90.0">
+         <font>
+            <Font size="1.0" />
+         </font></JFXButton>
+      <ImageView fitHeight="31.0" fitWidth="39.0" layoutX="39.0" layoutY="34.0">
+         <image>
+            <Image url="@Retour.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="70.0" layoutX="54.0" layoutY="325.0">
+         <image>
+            <Image url="@update.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

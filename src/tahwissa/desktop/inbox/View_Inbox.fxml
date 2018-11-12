@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="547.0" prefWidth="959.0" stylesheets="@../../../resources/css/jfoenix-design.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tahwissa.desktop.inbox.View_InboxController">
+   <children>
+      <ImageView blendMode="MULTIPLY" fitHeight="556.0" fitWidth="964.0" layoutX="4.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bg.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="repondre" layoutX="622.0" layoutY="71.0" onAction="#LoadMessage" styleClass="light-green-500" text="Répondre" />
+      <JFXButton fx:id="redi" layoutX="622.0" layoutY="27.0" onAction="#redirection" styleClass="blue-700" text="Envoyer un nouveau message" />
+      <JFXListView fx:id="listView" layoutX="224.0" layoutY="108.0" prefHeight="411.0" prefWidth="263.0" />
+      <JFXListView fx:id="conversation" layoutX="495.0" layoutY="108.0" prefHeight="331.0" prefWidth="363.0" />
+      <StackPane layoutX="574.0" layoutY="86.0" prefHeight="40.0" prefWidth="161.0" />
+      <StackPane layoutX="326.0" layoutY="464.0" prefHeight="40.0" prefWidth="161.0" />
+      <JFXButton fx:id="supprimer" layoutX="744.0" layoutY="71.0" onAction="#deleteConversation" styleClass="red-A700" text="Supprimer" />
+      <JFXTextField fx:id="contenuMsg" layoutX="495.0" layoutY="450.0" prefHeight="68.0" prefWidth="284.0" styleClass="white" />
+      <JFXButton fx:id="envoyer" layoutX="787.0" layoutY="469.0" onAction="#sendMessage" styleClass="deep-purple-A400" text="Envoyer" />
+      <JFXHamburger fx:id="hamburger" layoutX="915.0" layoutY="17.0" />
+      <JFXDrawer fx:id="drawer" prefHeight="546.0" prefWidth="202.0" />
+      <Label layoutX="224.0" layoutY="-1.0" prefHeight="86.0" prefWidth="316.0" stylesheets="@../../../resources/css/jfoenix-fonts.css" text="Tahwissa   Inbox" textFill="#b124b9">
+         <font>
+            <Font name="Urdu Typesetting Bold" size="38.0" />
+         </font>
+      </Label>
+      
+   </children>
+</AnchorPane>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDialogLayout?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111">
+   <children>
+      <JFXDialogLayout prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane prefHeight="389.0" prefWidth="590.0">
+               <children>
+                  <ImageView fitHeight="166.0" fitWidth="272.0" layoutX="245.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                     <image>
+                        <Image url="@../../../../../../../Pictures/images.jpg" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="195.0" layoutY="208.0">
+                     <children>
+                        <Label layoutX="16.0" prefHeight="17.0" prefWidth="170.0" style="-fx-background-color: #1ABC9C; -fx-font-weight: bold;" text="Libelle Article" textFill="#ecf0f1" />
+                        <Label layoutX="226.0" prefHeight="17.0" prefWidth="52.0" style="-fx-background-color: #F39C12;" text="150 TND" textFill="#ecf0f1" />
+                        <Text layoutX="16.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="Text" wrappingWidth="326.13671875" />
+                        <JFXButton buttonType="RAISED" layoutX="16.0" layoutY="121.0" style="-fx-background-color: #9B59B6;" text="Acheter" textFill="#ecf0f1">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="129.0" layoutY="121.0" style="-fx-background-color: #E74C3C;" text="Favoris" textFill="#ecf0f1">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="243.0" layoutY="121.0" style="-fx-background-color: #3498DB;" text="Fermer" textFill="#ecf0f1">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="361.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="104.0" fitWidth="144.0" layoutX="28.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../Pictures/3ee3fdad7387f4d40cf11af9f720de96.610x397x1.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="104.0" fitWidth="144.0" layoutX="27.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../Pictures/3ee3fdad7387f4d40cf11af9f720de96.610x397x1.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="104.0" fitWidth="144.0" layoutX="27.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../Pictures/3ee3fdad7387f4d40cf11af9f720de96.610x397x1.jpg" />
+                           </image>
+                        </ImageView>
+                        <JFXButton layoutX="82.0" layoutY="5.0" prefHeight="25.0" prefWidth="31.0" style="-fx-background-color: #9B59B6;" text="UP" textFill="#ecf0f1" />
+                        <JFXButton layoutX="73.0" layoutY="334.0" style="-fx-background-color: #9B59B6;" text="DOWN" textFill="#ecf0f1" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </JFXDialogLayout>
+   </children>
+</AnchorPane>

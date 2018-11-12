@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tahwissa.desktop.admin.modifier.EditerController">
+    <stylesheets>
+        <URL value="@editer.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField fx:id="nom" layoutX="89.0" layoutY="20.0" prefHeight="25.0" prefWidth="353.0" promptText="Nom" />
+      <JFXTextField fx:id="prenom" layoutX="89.0" layoutY="65.0" prefHeight="25.0" prefWidth="353.0" promptText="Prenom" />
+      <JFXTextField fx:id="mdp" layoutX="89.0" layoutY="212.0" prefHeight="25.0" prefWidth="353.0" promptText="Mot de pass" />
+      <JFXTextField fx:id="mdp1" layoutX="89.0" layoutY="250.0" prefHeight="25.0" prefWidth="353.0" promptText="Confirmer Mot de Pass" />
+      <JFXDatePicker fx:id="dateChoix" layoutX="86.0" layoutY="161.0" prefHeight="28.0" prefWidth="377.0" promptText="YYYY-MM-dd" />
+      <JFXTextField fx:id="email" layoutX="89.0" layoutY="109.0" prefHeight="25.0" prefWidth="353.0" promptText="Email" />
+      <JFXButton fx:id="confirmer" layoutX="165.0" layoutY="324.0" onAction="#confirmerButton" prefHeight="46.0" prefWidth="156.0" text="Rejoindre Tahwissa" />
+      <JFXButton fx:id="annuler" layoutX="472.0" layoutY="348.0" onAction="#annulerButton" prefHeight="38.0" prefWidth="114.0" text="Annuler" />
+      <JFXRadioButton layoutX="130.0" layoutY="291.0" text="Homme">
+         <toggleGroup>
+            <ToggleGroup fx:id="groupe" />
+         </toggleGroup></JFXRadioButton>
+      <JFXRadioButton layoutX="275.0" layoutY="291.0" text="Femme" toggleGroup="$groupe" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.cells.editors.base.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="tahwissa.desktop.inbox.DiscussionController">
+    <stylesheets>
+        <URL value="@discussion.css" />
+    </stylesheets>
+   <children>
+      <TableView layoutX="22.0" layoutY="71.0" prefHeight="313.0" prefWidth="202.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="126.0" text="C2" />
+        </columns>
+      </TableView>
+      <TableView layoutX="232.0" layoutY="71.0" prefHeight="313.0" prefWidth="354.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

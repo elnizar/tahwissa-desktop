@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="tahwissa.desktop.admin.ajout.AprouverFinalController">
+    <stylesheets>
+        <URL value="@aprouverfinal.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField fx:id="nom" disable="true" layoutX="77.0" layoutY="55.0" prefHeight="25.0" prefWidth="190.0" promptText="Nom" />
+      <JFXTextField fx:id="prenom" disable="true" layoutX="76.0" layoutY="109.0" prefHeight="25.0" prefWidth="184.0" promptText="Prenom" />
+      <JFXTextField fx:id="email" disable="true" layoutX="295.0" layoutY="55.0" prefHeight="25.0" prefWidth="207.0" promptText="Email" />
+      <JFXButton fx:id="valider" layoutX="370.0" layoutY="338.0" onAction="#validerButton" prefHeight="35.0" prefWidth="200.0" text="Valider" />
+      <JFXTextField fx:id="motif" disable="true" layoutX="82.0" layoutY="175.0" prefHeight="25.0" prefWidth="414.0" promptText="Motif" />
+      <JFXTextField fx:id="date" disable="true" layoutX="299.0" layoutY="109.0" prefHeight="25.0" prefWidth="200.0" promptText="Date" />
+      <JFXRadioButton fx:id="ecrire" layoutX="85.0" layoutY="249.0" prefHeight="25.0" prefWidth="147.0" text="Ecrire un message" />
+      <JFXTextArea fx:id="message" layoutX="94.0" layoutY="290.0" prefHeight="66.0" prefWidth="244.0" visible="false" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tahwissa.desktop.inbox.View_InboxController">
+   <children>
+      
+      <TableView fx:id="table" layoutX="39.0" layoutY="88.0" prefHeight="289.0" prefWidth="537.0">
+        <columns>
+          <TableColumn fx:id="date" prefWidth="132.0" text="Dernier message à:" />
+          <TableColumn fx:id="messages" minWidth="0.0" prefWidth="268.0" text="Discussion avec" />
+        </columns>
+      </TableView>
+      <Label layoutX="39.0" layoutY="13.0" text="INBOX" textAlignment="CENTER" textFill="#f51ae6">
+         <font>
+            <Font size="36.0" />
+         </font></Label>
+      <JFXButton fx:id="btn" layoutX="523.0" layoutY="52.0" onAction="#LoadMessage" text="refrech" />
+      <JFXButton fx:id="redi" layoutX="402.0" layoutY="14.0" onAction="#redirection" text="Envoyer un nouveau message" />
+      
+   </children>
+</AnchorPane>

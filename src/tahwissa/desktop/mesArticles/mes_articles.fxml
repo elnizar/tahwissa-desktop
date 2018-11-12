@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDialogLayout?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="444.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tahwissa.desktop.mesArticles.MesArticlesController">
+   <children>
+      <ScrollPane fx:id="MesArticles" prefHeight="561.0" prefWidth="722.0" style="-fx-background-color: #ECF0F1;" AnchorPane.leftAnchor="170.0">
+         <content>
+            <AnchorPane>
+               <children>
+                  <VBox prefHeight="536.0" prefWidth="699.0" spacing="5.0" style="-fx-background-color: #ECF0F1;">
+                     <children>
+                        <HBox fx:id="box1" prefHeight="164.0" prefWidth="575.0" style="-fx-border-color: black; -fx-border-width: 1;">
+                           <children>
+                              <VBox fx:id="boxArticle1" prefHeight="146.0" prefWidth="200.0" style="-fx-border-width: 2;">
+                                 <children>
+                                    <ImageView fx:id="imgArticle1" fitHeight="126.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="6.0" right="4.0" top="4.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label fx:id="libelleArticle1" text="Ceci est le libelle">
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../resources/img/price-tag%20(1).png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="6.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <JFXTextField fx:id="libelleInput1" visible="false">
+                                       <VBox.margin>
+                                          <Insets top="-22.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="153.0" prefWidth="516.0" spacing="1.0" style="-fx-border-width: 2;">
+                                 <children>
+                                    <ScrollPane fitToHeight="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="36.0" prefWidth="484.0">
+                                       <content>
+                                          <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefWidth="365.0">
+                                             <children>
+                                                <Text fx:id="descriptionBox1" layoutY="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in ipsum id orci porta dapibus. Donec rutrum congue leo eget malesuada. Nulla porttitor accumsan tincidunt. Sed porttitor lectus nibh. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus." wrappingWidth="369.13671875" AnchorPane.topAnchor="0.05078125" />
+                                                <JFXTextArea fx:id="textAreaBox1" prefHeight="40.0" prefWidth="500.0" visible="false" />
+                                             </children>
+                                             <padding>
+                                                <Insets right="-11.0" />
+                                             </padding>
+                                          </AnchorPane>
+                                       </content>
+                                       <VBox.margin>
+                                          <Insets bottom="3.0" left="6.0" top="2.0" />
+                                       </VBox.margin>
+                                    </ScrollPane>
+                                    <HBox spacing="57.0">
+                                       <children>
+                                          <Label fx:id="prixBox1" text="Ceci est le prix">
+                                             <HBox.margin>
+                                                <Insets left="4.0" />
+                                             </HBox.margin>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/price-tag.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                          <JFXTextField fx:id="inputPrixBox1" visible="false" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox spacing="58.0">
+                                       <children>
+                                          <Label fx:id="etatBox1" text="Ceci est l'etat du produit !">
+                                             <HBox.margin>
+                                                <Insets left="4.0" />
+                                             </HBox.margin>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/contract.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                          <JFXComboBox fx:id="inputEtatBox1" visible="false" />
+                                       </children>
+                                    </HBox>
+                                    <HBox spacing="288.0">
+                                       <children>
+                                          <Label fx:id="venduBox1" text="Vendu">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="6.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label fx:id="boostedBox1" text="Boosted">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/badge.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="38.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" spacing="70.0">
+                                       <children>
+                                          <JFXButton fx:id="venduBtnBox1" prefHeight="28.0" prefWidth="92.0" style="-fx-background-color: #8EF6E4;" text="Vendu">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/sold.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <padding>
+                                                <Insets left="-8.0" />
+                                             </padding>
+                                             <HBox.margin>
+                                                <Insets left="3.0" />
+                                             </HBox.margin>
+                                          </JFXButton>
+                                          <JFXButton fx:id="suppBtnBox1" prefHeight="28.0" prefWidth="104.0" style="-fx-background-color: #EDB1F1;" text="Supprimer">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/cart%20(1).png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </JFXButton>
+                                          <JFXButton fx:id="boosterBtnBox1" style="-fx-background-color: #D59BF6;" text="Booster">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/promotion.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </JFXButton>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="35.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="box2" prefHeight="164.0" prefWidth="575.0" style="-fx-border-color: black; -fx-border-width: 1;">
+                           <children>
+                              <VBox prefHeight="153.0" prefWidth="210.0" style="-fx-border-width: 2;">
+                                 <children>
+                                    <ImageView fx:id="imgBox2" fitHeight="126.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="6.0" right="4.0" top="4.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label fx:id="libelleBox2" text="Ceci est le libelle">
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../resources/img/price-tag%20(1).png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="6.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <JFXTextField fx:id="inputLibelleBox2" visible="false">
+                                       <VBox.margin>
+                                          <Insets top="-22.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="153.0" prefWidth="524.0" spacing="1.0" style="-fx-border-width: 2;">
+                                 <children>
+                                    <ScrollPane fitToHeight="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="44.0" prefWidth="484.0">
+                                       <content>
+                                          <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefWidth="365.0">
+                                             <children>
+                                                <Text fx:id="descriptionBox2" layoutY="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in ipsum id orci porta dapibus. Donec rutrum congue leo eget malesuada. Nulla porttitor accumsan tincidunt. Sed porttitor lectus nibh. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus." wrappingWidth="369.13671875" AnchorPane.topAnchor="0.05078125" />
+                                                <JFXTextArea fx:id="textAreaBox2" prefHeight="40.0" prefWidth="500.0" visible="false" />
+                                             </children>
+                                             <padding>
+                                                <Insets right="-11.0" />
+                                             </padding>
+                                          </AnchorPane>
+                                       </content>
+                                       <VBox.margin>
+                                          <Insets bottom="3.0" left="6.0" top="2.0" />
+                                       </VBox.margin>
+                                    </ScrollPane>
+                                    <HBox spacing="57.0">
+                                       <children>
+                                          <Label fx:id="prixBox2" text="Ceci est le prix">
+                                             <HBox.margin>
+                                                <Insets left="4.0" />
+                                             </HBox.margin>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/price-tag.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                          <JFXTextField fx:id="InputPrixBox2" visible="false" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox spacing="58.0">
+                                       <children>
+                                          <Label fx:id="etatBox2" text="Ceci est l'etat du produit !">
+                                             <HBox.margin>
+                                                <Insets left="4.0" />
+                                             </HBox.margin>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/contract.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                          <JFXComboBox fx:id="inputEtatBox2" visible="false" />
+                                       </children>
+                                    </HBox>
+                                    <HBox spacing="288.0">
+                                       <children>
+                                          <Label fx:id="venduBox2" text="Vendu">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="6.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label fx:id="boostedBox2" text="Boosted">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/badge.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="38.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" spacing="70.0">
+                                       <children>
+                                          <JFXButton fx:id="venduBtnBox2" prefHeight="28.0" prefWidth="92.0" style="-fx-background-color: #8EF6E4;" text="Vendu">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/sold.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <padding>
+                                                <Insets left="-8.0" />
+                                             </padding>
+                                             <HBox.margin>
+                                                <Insets left="3.0" />
+                                             </HBox.margin>
+                                          </JFXButton>
+                                          <JFXButton fx:id="suppBtnBox2" prefHeight="28.0" prefWidth="104.0" style="-fx-background-color: #EDB1F1;" text="Supprimer">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/cart%20(1).png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </JFXButton>
+                                          <JFXButton fx:id="boosterBtnBox2" style="-fx-background-color: #D59BF6;" text="Booster">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/promotion.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </JFXButton>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="35.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="box3" prefHeight="164.0" prefWidth="575.0" style="-fx-border-color: black; -fx-border-width: 1;">
+                           <children>
+                              <VBox prefHeight="155.0" prefWidth="189.0" style="-fx-border-width: 2;">
+                                 <children>
+                                    <ImageView fx:id="imgBox3" fitHeight="125.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="6.0" right="4.0" top="4.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label fx:id="libelleBox3" text="Ceci est le libelle">
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../resources/img/price-tag%20(1).png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="6.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <JFXTextField fx:id="inputLibelleBox3" visible="false">
+                                       <VBox.margin>
+                                          <Insets top="-22.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="155.0" prefWidth="504.0" spacing="1.0" style="-fx-border-width: 2;">
+                                 <children>
+                                    <ScrollPane fitToHeight="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="36.0" prefWidth="484.0">
+                                       <content>
+                                          <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefWidth="365.0">
+                                             <children>
+                                                <Text fx:id="descriptionBox3" layoutY="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in ipsum id orci porta dapibus. Donec rutrum congue leo eget malesuada. Nulla porttitor accumsan tincidunt. Sed porttitor lectus nibh. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus." wrappingWidth="369.13671875" AnchorPane.topAnchor="0.05078125" />
+                                                <JFXTextArea fx:id="textAreaBox3" prefHeight="40.0" prefWidth="500.0" visible="false" />
+                                             </children>
+                                             <padding>
+                                                <Insets right="-11.0" />
+                                             </padding>
+                                          </AnchorPane>
+                                       </content>
+                                       <VBox.margin>
+                                          <Insets bottom="3.0" left="6.0" top="2.0" />
+                                       </VBox.margin>
+                                    </ScrollPane>
+                                    <HBox spacing="57.0">
+                                       <children>
+                                          <Label fx:id="prixBox3" text="Ceci est le prix">
+                                             <HBox.margin>
+                                                <Insets left="4.0" />
+                                             </HBox.margin>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/price-tag.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                          <JFXTextField fx:id="inputPrixBo3" visible="false" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox spacing="58.0">
+                                       <children>
+                                          <Label fx:id="EtatBox3" text="Ceci est l'etat du produit !">
+                                             <HBox.margin>
+                                                <Insets left="4.0" />
+                                             </HBox.margin>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/contract.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                          <JFXComboBox fx:id="inputEtatBox3" visible="false" />
+                                       </children>
+                                    </HBox>
+                                    <HBox spacing="288.0">
+                                       <children>
+                                          <Label fx:id="venduBox3" text="Vendu">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="6.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label fx:id="boostedBox3" text="Boosted">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/badge.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="38.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" spacing="70.0">
+                                       <children>
+                                          <JFXButton fx:id="venduBtnBox3" prefHeight="28.0" prefWidth="92.0" style="-fx-background-color: #8EF6E4;" text="Vendu">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/sold.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <padding>
+                                                <Insets left="-8.0" />
+                                             </padding>
+                                             <HBox.margin>
+                                                <Insets left="3.0" />
+                                             </HBox.margin>
+                                          </JFXButton>
+                                          <JFXButton fx:id="suppBtnBox3" prefHeight="28.0" prefWidth="104.0" style="-fx-background-color: #EDB1F1;" text="Supprimer">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/cart%20(1).png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </JFXButton>
+                                          <JFXButton fx:id="boosterBtnBox3" style="-fx-background-color: #D59BF6;" text="Booster">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/promotion.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </JFXButton>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="35.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Pagination fx:id="paginator" prefHeight="18.0" prefWidth="575.0" />
+                     </children>
+                     <padding>
+                        <Insets left="20.0" top="18.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <StackPane fx:id="stackPane" layoutX="39.0" layoutY="33.0" prefHeight="528.0" prefWidth="954.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label style="-fx-background-color: #ECF0F1;" text="Vous n'avez aucun article!" textFill="#a11b96">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+            </Label>
+         </children></StackPane>
+      <ImageView blendMode="MULTIPLY" fitHeight="576.0" fitWidth="993.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../bg.png" />
+         </image>
+      </ImageView>
+      <JFXDrawer fx:id="drawer" prefHeight="451.0" prefWidth="167.0" />
+      <JFXHamburger fx:id="hamburger" layoutX="920.0" layoutY="14.0" prefHeight="49.0" prefWidth="59.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <StackPane fx:id="paymentPane" layoutX="212.0" layoutY="106.0" prefHeight="303.0" prefWidth="429.0" visible="false">
+         <children>
+            <JFXDialogLayout fx:id="paymentLayout" prefHeight="274.0" prefWidth="429.0">
+               <children>
+                  <VBox spacing="50.0" style="-fx-border-color: black;">
+                     <children>
+                        <HBox prefHeight="30.0" prefWidth="295.0" spacing="8.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/binary-code.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXTextField fx:id="cardNumberInput" labelFloat="true" prefHeight="25.0" prefWidth="230.0" promptText="Numéro de la carte">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="27.0" right="20.0" top="24.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox spacing="8.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/calendar-folded-page.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXTextField fx:id="yearInput" labelFloat="true" prefHeight="25.0" prefWidth="231.0" promptText="Année d'expiration" />
+                           </children>
+                           <VBox.margin>
+                              <Insets left="31.0" right="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox spacing="8.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/calendar-page-on-day-twelve.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXTextField fx:id="monthInput" labelFloat="true" prefHeight="25.0" prefWidth="231.0" promptText="Mois d'expiration" />
+                           </children>
+                           <VBox.margin>
+                              <Insets left="31.0" right="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox spacing="120.0">
+                           <children>
+                              <JFXButton fx:id="payStripe" style="-fx-background-color: #7EFFDB;" text="Valider">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../resources/img/credit-card.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="cancelStripe" style="-fx-background-color: #FF9DE2;" text="Cancel">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../resources/img/cloud-computing.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                           <padding>
+                              <Insets left="30.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="7.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </JFXDialogLayout>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

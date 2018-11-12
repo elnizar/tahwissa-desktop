@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="737.0" prefWidth="1330.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tahwissa.desktop.detailsevent.DetailsController">
+   <content>
+      <AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="638.0" prefWidth="1211.0" stylesheets="@../../../resources/css/jfoenix-design.css">
+         <children>
+            <JFXHamburger fx:id="hamburger" layoutX="1234.0" layoutY="8.0" prefHeight="51.0" prefWidth="61.0" />
+            <ImageView blendMode="MULTIPLY" fitHeight="959.0" fitWidth="1322.0" mouseTransparent="true" pickOnBounds="true" styleClass="deep-purple-600">
+               <image>
+                  <Image url="@../bg.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="14.0" layoutY="372.0" prefHeight="350.0" prefWidth="1295.0" styleClass="ligh">
+               <children>
+                  <Label layoutY="38.0" mouseTransparent="true" prefHeight="40.0" prefWidth="167.0" text="Description :">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane hbarPolicy="NEVER" layoutX="181.0" layoutY="38.0" prefHeight="98.0" prefWidth="460.0">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="339.0" prefWidth="444.0">
+                           <children>
+                              <TextFlow prefHeight="339.0" prefWidth="441.0" textAlignment="JUSTIFY">
+                                 <children>
+                                    <Text fx:id="description" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="TeLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsumxt" wrappingWidth="592.86376953125" />
+                                 </children>
+                              </TextFlow>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+                  <Label layoutY="175.0" mouseTransparent="true" prefHeight="40.0" prefWidth="167.0" text="Règlement :">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane layoutX="181.0" layoutY="175.0" prefHeight="109.0" prefWidth="460.0">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="339.0" prefWidth="448.0">
+                           <children>
+                              <TextFlow prefHeight="339.0" prefWidth="439.0" textAlignment="JUSTIFY">
+                                 <children>
+                                    <Text fx:id="reglement" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="TeLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsumxt" wrappingWidth="592.86376953125" />
+                                 </children>
+                              </TextFlow>
+                              <TextFlow layoutX="678.0" layoutY="760.0" prefHeight="24.0" prefWidth="200.0" textAlignment="CENTER">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Organisateur" />
+                                 </children>
+                              </TextFlow>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+                  <JFXButton layoutX="994.0" layoutY="259.0" onAction="#participer" onMouseEntered="#updateStars" prefHeight="51.0" prefWidth="192.0" styleClass="deep-purple-400" text="Réserver">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../resources/img/22-512.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Label fx:id="datedepart" layoutX="804.0" layoutY="39.0" text="01/01/1970 00:00">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="76.0" layoutX="592.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="49.0" fitWidth="45.0" layoutX="744.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resources/img/calendar%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <Separator layoutX="677.0" layoutY="19.0" orientation="VERTICAL" prefHeight="263.0" prefWidth="4.0" />
+                  <Label fx:id="frais" layoutX="804.0" layoutY="94.0" text="50 Dinars">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="49.0" fitWidth="45.0" layoutX="744.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resources/img/banknote.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="distance" layoutX="804.0" layoutY="157.0" text="5 Kilomètres">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="randonnee" fitHeight="49.0" fitWidth="45.0" layoutX="744.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resources/img/backpacker-hiking.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="nbplaces" layoutX="804.0" layoutY="208.0" text="69 places">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="49.0" fitWidth="45.0" layoutX="744.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resources/img/user.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="duree" layoutX="1009.0" layoutY="157.0" text="4 jours">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="camping" fitHeight="49.0" fitWidth="45.0" layoutX="949.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resources/img/camping-tent.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="star1" fitHeight="40.0" fitWidth="31.0" layoutX="610.0" layoutY="290.0" onMouseClicked="#onStarClick" onMouseEntered="#updateStars" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resources/img/star.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="star2" fitHeight="40.0" fitWidth="31.0" layoutX="638.0" layoutY="290.0" onMouseClicked="#onStarClick" onMouseEntered="#updateStars" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resources/img/star%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="star3" fitHeight="40.0" fitWidth="31.0" layoutX="668.0" layoutY="290.0" onMouseClicked="#onStarClick" onMouseEntered="#updateStars" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resources/img/star%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="star4" fitHeight="40.0" fitWidth="31.0" layoutX="697.0" layoutY="290.0" onMouseClicked="#onStarClick" onMouseEntered="#updateStars" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resources/img/star%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="star5" fitHeight="40.0" fitWidth="31.0" layoutX="726.0" layoutY="290.0" onMouseClicked="#onStarClick" onMouseEntered="#updateStars" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resources/img/star%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <TextFlow layoutX="608.0" layoutY="325.0" prefHeight="23.0" prefWidth="145.0" textAlignment="CENTER">
+                     <children>
+                        <Text fx:id="note" strokeType="OUTSIDE" strokeWidth="0.0" text="Note : 0/5 (0 votes)" />
+                     </children>
+                  </TextFlow>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="38.0" fitWidth="33.0" layoutX="1161.0" layoutY="193.0" onMouseClicked="#nextImage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/img/right-arrow.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="33.0" layoutX="176.0" layoutY="193.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#previousImage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/img/right-arrow.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="title" layoutX="507.0" layoutY="21.0" prefHeight="38.0" prefWidth="353.0" style="-fx-text-alignment: center;" text="Randonnée type à destination " textAlignment="JUSTIFY">
+               <font>
+                  <Font name="System Italic" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imageDisplay" fitHeight="320.0" fitWidth="891.0" layoutX="238.0" layoutY="65.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../../../Desktop/1.png" />
+               </image>
+            </ImageView>
+            <JFXTreeTableView fx:id="treeView" layoutX="28.0" layoutY="761.0" prefHeight="187.0" prefWidth="471.0" />
+            <Label layoutX="28.0" layoutY="722.0" prefHeight="40.0" prefWidth="121.0" text="Planning:">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="108.0" fitWidth="101.0" layoutX="717.0" layoutY="785.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/img/userr.png" />
+               </image>
+            </ImageView>
+            <TextFlow layoutX="668.0" layoutY="750.0" prefHeight="24.0" prefWidth="200.0" textAlignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Organisateur" />
+               </children>
+            </TextFlow>
+            <TextFlow layoutX="668.0" layoutY="886.0" prefHeight="24.0" prefWidth="200.0" textAlignment="CENTER">
+               <children>
+                  <Text fx:id="nomO" strokeType="OUTSIDE" strokeWidth="0.0" text="Flen El Fouleni" />
+               </children>
+            </TextFlow>
+            <TextFlow layoutX="730.0" layoutY="909.0" prefHeight="24.0" prefWidth="91.0">
+               <children>
+                  <Text fx:id="telO" strokeType="OUTSIDE" strokeWidth="0.0" text="21 671 680" />
+               </children>
+            </TextFlow>
+            <TextFlow layoutX="730.0" layoutY="934.0" prefHeight="24.0" prefWidth="118.0">
+               <children>
+                  <Text fx:id="mailO" strokeType="OUTSIDE" strokeWidth="0.0" text="xyz@abc.com" />
+               </children>
+            </TextFlow>
+            <TextFlow layoutX="904.0" layoutY="750.0" prefHeight="24.0" prefWidth="200.0" textAlignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Guide" />
+               </children>
+            </TextFlow>
+            <ImageView fitHeight="108.0" fitWidth="101.0" layoutX="954.0" layoutY="785.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/img/userr.png" />
+               </image>
+            </ImageView>
+            <TextFlow layoutX="904.0" layoutY="886.0" prefHeight="24.0" prefWidth="200.0" textAlignment="CENTER">
+               <children>
+                  <Text fx:id="nomG" strokeType="OUTSIDE" strokeWidth="0.0" text="Flen El Fouleni" />
+               </children>
+            </TextFlow>
+            <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="703.0" layoutY="910.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/img/phone-call.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="701.0" layoutY="934.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/img/message.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="942.0" layoutY="910.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/img/phone-call.png" />
+               </image>
+            </ImageView>
+            <TextFlow layoutX="969.0" layoutY="907.0" prefHeight="24.0" prefWidth="107.0">
+               <children>
+                  <Text fx:id="telG" strokeType="OUTSIDE" strokeWidth="0.0" text="21 671 680" />
+               </children>
+            </TextFlow>
+            <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="937.0" layoutY="934.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/img/message.png" />
+               </image>
+            </ImageView>
+            <TextFlow layoutX="964.0" layoutY="933.0" prefHeight="24.0" prefWidth="118.0">
+               <children>
+                  <Text fx:id="mailG" strokeType="OUTSIDE" strokeWidth="0.0" text="xyz@abc.com" />
+               </children>
+            </TextFlow>
+            <JFXDrawer fx:id="drawer" prefHeight="451.0" prefWidth="167.0" />
+            <StackPane fx:id="stackPane" mouseTransparent="true" prefHeight="921.0" prefWidth="1304.0" />
+         </children>
+      </AnchorPane>
+   </content>
+   <stylesheets>
+      <URL value="@../../../resources/css/treeTableView.css" />
+      <URL value="@../../../resources/css/testScroll.css" />
+   </stylesheets>
+</ScrollPane>

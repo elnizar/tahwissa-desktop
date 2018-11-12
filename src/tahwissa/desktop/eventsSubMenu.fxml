@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox fx:id="box" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="286.0" prefWidth="141.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tahwissa.desktop.DrawerController">
+   <children>
+      <JFXButton fx:id="page1" accessibleText="Page 1" prefHeight="60.0" prefWidth="210.0" text="Test" />
+      <JFXButton fx:id="page2" accessibleText="Page 2" prefHeight="60.0" prefWidth="210.0" text="Test" />
+   </children>
+</VBox>

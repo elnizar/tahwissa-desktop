@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="638.0" prefWidth="1211.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tahwissa.desktop.mesparticipations.ParticipationController">
+   <children>
+      <JFXHamburger fx:id="hamburger" layoutX="1142.0" layoutY="-1.0" prefHeight="51.0" prefWidth="61.0" />
+      <ImageView blendMode="MULTIPLY" fitHeight="681.0" fitWidth="1231.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" styleClass="deep-purple-600">
+         <image>
+            <Image url="@../bg.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="552.0" layoutY="14.0" text="Mes évènements">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <BorderPane fx:id="borderPane" layoutX="219.0" layoutY="95.0" prefHeight="561.0" prefWidth="881.0" stylesheets="@../../../resources/css/calendar.css" />
+      <JFXDrawer fx:id="drawer" prefHeight="451.0" prefWidth="167.0" />
+   </children>
+   <stylesheets>
+      <URL value="@../../../resources/css/jfoenix-design.css" />
+      <URL value="@../../../resources/css/treeTableView.css" />
+      <URL value="@../../../resources/css/testScroll.css" />
+   </stylesheets>
+</AnchorPane>

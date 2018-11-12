@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="433.0" prefWidth="667.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="tahwissa.desktop.apipaypal.CompteController">
+   <children>
+      <WebView fx:id="webview" prefHeight="389.0" prefWidth="761.0" />
+      <JFXButton fx:id="fermer" layoutX="609.0" layoutY="389.0" onAction="#fermerButton" prefHeight="37.0" prefWidth="152.0" text="Fermer" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31 mars 2017, 13:30:42
+    Author     : esprit
+*/
+#statut_label {
+    -fx-background-color : #f44336;
+    -fx-font-weight : bold;
+    -fx-color: #ECF0F1;
+}
+
+#date_label {
+     -fx-background-color : #2196f3;
+     -fx-font-weight : bold;
+     -fx-color: #ECF0F1;
+}
+
+#reclamer_btn {
+    -fx-background-color : #ff9800;
+    -fx-font-weight : bold;
+    -fx-color: #ECF0F1;
+}
+
+#reclamer_dis {
+     -fx-background-color :#ffab91;
+         -fx-font-weight : bold;
+         -fx-color: #ECF0F1;
+}
+
+#accuser_btn {
+    -fx-background-color :#9ccc65;
+    -fx-font-weight : bold;
+    -fx-color: #ECF0F1;
+}
+
+#accuser_dis {
+    -fx-background-color :#e6ee9c;
+    -fx-font-weight : bold;
+    -fx-color: #ECF0F1;
+}

@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDialogLayout?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="974.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tahwissa.desktop.boutique.BoutiqueController">
+    <stylesheets>
+        <URL value="@/resources/css/jfoenix-design.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="561.0" prefWidth="993.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView blendMode="MULTIPLY" fitHeight="580.0" fitWidth="999.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-19.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-6.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../bg.png" />
+               </image>
+            </ImageView>
+            <Pane fx:id="div_articles" layoutX="86.0" prefHeight="539.0" prefWidth="762.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="86.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="544.0" fitWidth="766.0" layoutX="18.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resources/img/boutique.png" />
+                     </image>
+                  </ImageView>
+                  <Pane fx:id="div11" layoutX="56.0" layoutY="51.0" prefHeight="200.0" prefWidth="222.0" style="-fx-border-color: #3498DB; -fx-background-color: white;">
+                     <children>
+                        <Label layoutX="149.0" layoutY="139.0" style="-fx-font-weight: bold;" text="150 DNT">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/priceeee.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="139.0" prefHeight="17.0" prefWidth="135.0" style="-fx-font-weight: bold;" text="Produit Libelle">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/libelle.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <tooltip>
+                              <Tooltip fx:id="tool1" text="Empty Tooltip" />
+                           </tooltip>
+                        </Label>
+                        <JFXButton buttonType="RAISED" layoutX="124.0" layoutY="162.0" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #9896F1;" text="Détails">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/more-options.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton layoutX="12.0" layoutY="164.0" prefHeight="30.0" prefWidth="68.0" style="-fx-background-color: #8ef6e4;" text="Buy">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/cart.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <Pane layoutX="11.0" layoutY="5.0" prefHeight="131.0" prefWidth="200.0" style="-fx-background-color: #ECF0F1;">
+                           <children>
+                              <ImageView fitHeight="106.0" fitWidth="167.0" layoutX="41.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../logo.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="div22" layoutX="305.0" layoutY="276.0" prefHeight="200.0" prefWidth="222.0" style="-fx-border-color: #3498DB; -fx-background-color: white;">
+                     <children>
+                        <Label fx:id="prix_11" layoutX="149.0" layoutY="139.0" style="-fx-font-weight: bold;" text="150 DNT">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/priceeee.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Label fx:id="libelle_11" layoutX="7.0" layoutY="139.0" prefHeight="17.0" prefWidth="135.0" style="-fx-font-weight: bold;" text="Produit Libelle">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/libelle.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <tooltip>
+                              <Tooltip fx:id="tool5" text="Empty Tooltip" />
+                           </tooltip>
+                        </Label>
+                        <JFXButton fx:id="btn_detail" buttonType="RAISED" layoutX="134.0" layoutY="165.0" style="-fx-background-color: #9896F1;" text="Détails">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/more-options.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btn_buy" layoutX="9.0" layoutY="165.0" style="-fx-background-color: #8ef6e4;" text="Buy">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/cart.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <Pane fx:id="pane_img" layoutX="11.0" layoutY="5.0" prefHeight="131.0" prefWidth="200.0" style="-fx-background-color: #ECF0F1;">
+                           <children>
+                              <ImageView fx:id="image" fitHeight="106.0" fitWidth="167.0" layoutX="41.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../logo.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="div21" layoutX="56.0" layoutY="276.0" prefHeight="200.0" prefWidth="222.0" style="-fx-border-color: #3498DB; -fx-background-color: white;">
+                     <children>
+                        <Label layoutX="149.0" layoutY="139.0" style="-fx-font-weight: bold;" text="150 DNT">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/priceeee.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="139.0" prefHeight="17.0" prefWidth="135.0" style="-fx-font-weight: bold;" text="Produit Libelle">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/libelle.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <tooltip>
+                              <Tooltip fx:id="tool4" text="Empty Tooltip" />
+                           </tooltip>
+                        </Label>
+                        <JFXButton buttonType="RAISED" layoutX="134.0" layoutY="165.0" style="-fx-background-color: #9896F1;" text="Détails">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/more-options.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton layoutX="9.0" layoutY="165.0" style="-fx-background-color: #8ef6e4;" text="Buy">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/cart.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <Pane layoutX="11.0" layoutY="5.0" prefHeight="131.0" prefWidth="200.0" style="-fx-background-color: #ECF0F1;">
+                           <children>
+                              <ImageView fitHeight="106.0" fitWidth="167.0" layoutX="41.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../logo.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="div13" layoutX="540.0" layoutY="52.0" prefHeight="200.0" prefWidth="222.0" style="-fx-border-color: #3498DB; -fx-background-color: white;">
+                     <children>
+                        <Label layoutX="149.0" layoutY="139.0" style="-fx-font-weight: bold;" text="150 DNT">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/priceeee.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="139.0" prefHeight="17.0" prefWidth="135.0" style="-fx-font-weight: bold;" text="Produit Libelle">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/libelle.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <tooltip>
+                              <Tooltip fx:id="tool3" text="Empty Tooltip" />
+                           </tooltip>
+                        </Label>
+                        <JFXButton buttonType="RAISED" layoutX="134.0" layoutY="165.0" style="-fx-background-color: #9896F1;" text="Détails">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/more-options.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton layoutX="9.0" layoutY="165.0" style="-fx-background-color: #8ef6e4;" text="Buy">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/cart.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <Pane layoutX="11.0" layoutY="5.0" prefHeight="131.0" prefWidth="200.0" style="-fx-background-color: #ECF0F1;">
+                           <children>
+                              <ImageView fitHeight="106.0" fitWidth="167.0" layoutX="41.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../logo.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="div12" layoutX="305.0" layoutY="51.0" prefHeight="200.0" prefWidth="222.0" style="-fx-border-color: #3498DB; -fx-background-color: white;">
+                     <children>
+                        <Label layoutX="149.0" layoutY="139.0" style="-fx-font-weight: bold;" text="150 DNT">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/priceeee.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="139.0" prefHeight="17.0" prefWidth="135.0" style="-fx-font-weight: bold;" text="Produit Libelle">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/libelle.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <tooltip>
+                              <Tooltip fx:id="tool2" text="Empty Tooltip" />
+                           </tooltip>
+                        </Label>
+                        <JFXButton buttonType="RAISED" layoutX="134.0" layoutY="165.0" style="-fx-background-color: #9896F1;" text="Détails">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/more-options.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton layoutX="9.0" layoutY="165.0" style="-fx-background-color: #8ef6e4;" text="Buy">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/cart.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <Pane layoutX="11.0" layoutY="5.0" prefHeight="131.0" prefWidth="200.0" style="-fx-background-color: #ECF0F1;">
+                           <children>
+                              <ImageView fitHeight="106.0" fitWidth="167.0" layoutX="41.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../logo.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="div23" layoutX="541.0" layoutY="276.0" prefHeight="200.0" prefWidth="222.0" style="-fx-border-color: #3498DB; -fx-background-color: white;">
+                     <children>
+                        <Label layoutX="149.0" layoutY="139.0" style="-fx-font-weight: bold;" text="150 DNT">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/priceeee.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="139.0" prefHeight="17.0" prefWidth="135.0" style="-fx-font-weight: bold;" text="Produit Libelle">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/libelle.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <tooltip>
+                              <Tooltip fx:id="tool6" text="Empty Tooltip" />
+                           </tooltip>
+                        </Label>
+                        <JFXButton buttonType="RAISED" layoutX="134.0" layoutY="165.0" style="-fx-background-color: #9896F1;" text="Détails">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/more-options.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton layoutX="9.0" layoutY="165.0" style="-fx-background-color: #8ef6e4;" text="Buy">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/cart.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <Pane layoutX="11.0" layoutY="5.0" prefHeight="131.0" prefWidth="200.0" style="-fx-background-color: #ECF0F1;">
+                           <children>
+                              <ImageView fitHeight="106.0" fitWidth="167.0" layoutX="41.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../logo.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pagination fx:id="paginator" layoutX="309.0" layoutY="503.0" prefHeight="49.0" prefWidth="190.0" />
+               </children>
+            </Pane>
+            <JFXHamburger fx:id="hamburger" layoutX="925.0" layoutY="14.0" prefHeight="49.0" prefWidth="59.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="14.0" />
+            <JFXDrawer fx:id="drawer" layoutX="1.0" prefHeight="451.0" prefWidth="167.0" />
+            <StackPane fx:id="paneSponsorise" layoutX="222.0" layoutY="82.0" prefHeight="401.0" prefWidth="478.0" visible="false">
+               <children>
+                  <ImageView fitHeight="461.0" fitWidth="507.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@bg_btq.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="419.0" prefWidth="507.0" spacing="8.0" style="-fx-border-color: black;">
+                     <children>
+                        <HBox spacing="340.0">
+                           <children>
+                              <Label prefHeight="25.0" prefWidth="102.0" text="Sponsorisé">
+                                 <graphic>
+                                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../resources/img/badge.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="closeBtn" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/cancel.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <ImageView fx:id="imgSponsorise" fitHeight="118.0" fitWidth="269.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="100.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <HBox spacing="50.0">
+                           <padding>
+                              <Insets left="6.0" right="6.0" />
+                           </padding>
+                           <children>
+                              <Label fx:id="libelleSponsorise" prefHeight="20.0" prefWidth="324.0" text="Libelle">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../resources/img/libelle.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="prixSponsorise" prefHeight="20.0" prefWidth="229.0" text="Prix">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../resources/img/priceeee.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="60.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <ScrollPane prefHeight="176.0" prefWidth="442.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="174.0" prefWidth="446.0">
+                                 <children>
+                                    <Text fx:id="descriptionSponsorise" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                           <VBox.margin>
+                              <Insets left="6.0" right="6.0" />
+                           </VBox.margin>
+                        </ScrollPane>
+                        <Label fx:id="etatSponsorise" text="Etat">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/contract.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="venduSponsorise" text="Vendu">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/sold.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="acheterSponsorise" buttonType="RAISED" prefHeight="30.0" prefWidth="484.0" style="-fx-background-color: #7EFFDB;" text="Acheter">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/cart.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+      <StackPane fx:id="dialogPane" layoutX="141.0" layoutY="9.0" prefHeight="526.0" prefWidth="655.0" stylesheets="@../../../resources/css/boutique.css" visible="false" AnchorPane.leftAnchor="141.0" AnchorPane.topAnchor="9.0">
+         <children>
+            <JFXDialogLayout fx:id="layout" prefHeight="502.0" prefWidth="655.0">
+               <children>
+                  <HBox fx:id="detailBox" prefHeight="496.0" prefWidth="607.0" spacing="42.0">
+                     <children>
+                        <VBox fx:id="imageBox" prefHeight="412.0" prefWidth="160.0" spacing="12.0">
+                           <children>
+                              <Label fx:id="up">
+                                 <graphic>
+                                    <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../resources/img/up-arrow.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <VBox.margin>
+                                    <Insets left="70.0" top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <ImageView fx:id="image_1" fitHeight="104.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../Pictures/3ee3fdad7387f4d40cf11af9f720de96.610x397x1.jpg" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="7.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="image_2" fitHeight="104.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../Pictures/3ee3fdad7387f4d40cf11af9f720de96.610x397x1.jpg" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="7.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="image_3" fitHeight="104.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../Pictures/3ee3fdad7387f4d40cf11af9f720de96.610x397x1.jpg" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="7.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label fx:id="down">
+                                 <graphic>
+                                    <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../resources/img/down-arrow.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <VBox.margin>
+                                    <Insets left="70.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets top="22.0" />
+                           </padding>
+                        </VBox>
+                        <VBox prefHeight="491.0" prefWidth="388.0" spacing="6.0" style="-fx-border-color: ecf0f1; -fx-border-width: 2;">
+                           <children>
+                              <ImageView fx:id="image_id" fitHeight="166.0" fitWidth="254.0" pickOnBounds="true" preserveRatio="true">
+                                 <viewport>
+                                    <Rectangle2D />
+                                 </viewport>
+                                 <image>
+                                    <Image url="@../../../../../../../Pictures/images.jpg" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="74.0" top="6.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <VBox prefHeight="273.0" prefWidth="384.0" spacing="8.0">
+                                 <children>
+                                    <HBox spacing="69.0">
+                                       <children>
+                                          <Label fx:id="libelle_detail" prefHeight="24.0" prefWidth="207.0" style="-fx-font-weight: bold; -fx-font-size: 15;" text="Libelle Article hhhhhhhh">
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/price-tag%20(1).png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <HBox.margin>
+                                                <Insets left="4.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label fx:id="prix_detail" style="-fx-font-weight: bold; -fx-font-size: 13;" text="Prix">
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/price-tag%20(2).png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                       </children>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <VBox.margin>
+                                          <Insets top="2.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <Label fx:id="etat_detail" text="Etat">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../resources/img/good-review.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets left="4.0" top="-7.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <ScrollPane prefHeight="194.0" prefWidth="376.0">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0">
+                                             <children>
+                                                <Text fx:id="description_detail" layoutX="7.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="Text" wrappingWidth="326.13671875" AnchorPane.leftAnchor="7.0">
+                                                   <cursor>
+                                                      <Cursor fx:constant="TEXT" />
+                                                   </cursor>
+                                                </Text>
+                                             </children>
+                                             <padding>
+                                                <Insets left="11.0" />
+                                             </padding>
+                                          </AnchorPane>
+                                      </content>
+                                       <padding>
+                                          <Insets left="3.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets left="4.0" right="4.0" />
+                                       </VBox.margin>
+                                    </ScrollPane>
+                                    <HBox spacing="35.0">
+                                       <children>
+                                          <JFXButton fx:id="acheter" buttonType="RAISED" style="-fx-background-color: #8EF6E4;" text="Acheter">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/cart.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </JFXButton>
+                                          <JFXButton fx:id="favoris" buttonType="RAISED" style="-fx-background-color: #9896F1;" text="Favoris">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/heart.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </JFXButton>
+                                          <JFXButton fx:id="fermer" buttonType="RAISED" style="-fx-background-color: #EDB1F1#D59BF6;" text="Fermer">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../resources/img/cancel.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </JFXButton>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="18.0" right="11.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </JFXDialogLayout>
+         </children>
+      </StackPane>
+      <StackPane fx:id="paymentPane" layoutX="222.0" layoutY="116.0" prefHeight="303.0" prefWidth="429.0" visible="false">
+         <children>
+            <JFXDialogLayout fx:id="paymentLayout" prefHeight="274.0" prefWidth="429.0">
+               <children>
+                  <VBox spacing="50.0" style="-fx-border-color: black;">
+                     <children>
+                        <HBox prefHeight="30.0" prefWidth="295.0" spacing="8.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/binary-code.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXTextField fx:id="cardNumberInput" labelFloat="true" prefHeight="25.0" prefWidth="230.0" promptText="Numéro de la carte">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="27.0" right="20.0" top="24.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox spacing="8.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/calendar-folded-page.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXTextField fx:id="yearInput" labelFloat="true" prefHeight="25.0" prefWidth="231.0" promptText="Année d'expiration" />
+                           </children>
+                           <VBox.margin>
+                              <Insets left="31.0" right="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox spacing="8.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/calendar-page-on-day-twelve.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXTextField fx:id="monthInput" labelFloat="true" prefHeight="25.0" prefWidth="231.0" promptText="Mois d'expiration" />
+                           </children>
+                           <VBox.margin>
+                              <Insets left="31.0" right="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox spacing="120.0">
+                           <children>
+                              <JFXButton fx:id="payStripe" style="-fx-background-color: #7EFFDB;" text="Valider">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../resources/img/credit-card.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="cancelStripe" style="-fx-background-color: #FF9DE2;" text="Cancel">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../resources/img/cloud-computing.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                           <padding>
+                              <Insets left="30.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="7.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </JFXDialogLayout>
+         </children>
+      </StackPane>
+      <StackPane fx:id="CompteDialog" layoutX="314.0" layoutY="138.0" prefHeight="252.0" prefWidth="379.0" visible="false">
+         <children>
+            <JFXDialogLayout fx:id="CompteDialogLay" />
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

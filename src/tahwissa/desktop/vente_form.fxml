@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="vendreContent" minHeight="0.0" minWidth="0.0" prefHeight="518.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="libelleLab" layoutX="32.0" layoutY="39.0" text="Libelle" />
+      <Label fx:id="prixLab" layoutX="32.0" layoutY="80.0" text="Prix" />
+      <Label fx:id="etatLab" layoutX="32.0" layoutY="122.0" text="Etat" />
+      <Label fx:id="descriptionLab" layoutX="28.0" layoutY="156.0" text="Description" />
+      <Label fx:id="imageLab" layoutX="32.0" layoutY="426.0" text="Image d'Article" />
+      <JFXTextField fx:id="libelle" layoutX="131.0" layoutY="35.0" prefHeight="25.0" prefWidth="193.0" unFocusColor="#f2e9f7">
+         <stylesheets>
+            <URL value="@vendre_article/jfoenix-design.css" />
+            <URL value="@vendre_article/jfoenix-fonts.css" />
+         </stylesheets>
+      </JFXTextField>
+      <JFXTextField fx:id="prix" layoutX="130.0" layoutY="76.0" prefHeight="25.0" prefWidth="195.0" unFocusColor="#f2e9f7" />
+      <JFXTextArea fx:id="description" layoutX="130.0" layoutY="191.0" prefHeight="172.0" prefWidth="209.0" unFocusColor="#f2e9f7" />
+      <JFXButton fx:id="upload" buttonType="RAISED" layoutX="130.0" layoutY="420.0" onAction="#fileChoosing" prefHeight="25.0" prefWidth="217.0" ripplerFill="#f5e5ff" text="Choisir un image .." />
+      <JFXButton fx:id="ajouter" layoutX="116.0" layoutY="477.0" onAction="#ajouterArticle" prefHeight="30.0" prefWidth="228.0" text="Ajouter" />
+      <JFXComboBox fx:id="etat" layoutX="130.0" layoutY="118.0" prefHeight="25.0" prefWidth="197.0" unFocusColor="#f2e9f7" />
+   </children>
+</AnchorPane>

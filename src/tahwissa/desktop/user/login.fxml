@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="437.0" prefWidth="620.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tahwissa.desktop.user.LoginController">
+    <stylesheets>
+        <URL value="@login.css" />
+    </stylesheets>
+   <children>
+      <ImageView fx:id="sinsfb" fitHeight="437.0" fitWidth="620.0">
+         <image>
+            <Image url="@bg.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="user" layoutX="55.0" layoutY="111.0" prefHeight="33.0" prefWidth="456.0" promptText="Nom d'utilisateur" unFocusColor="#735e9a" />
+      <JFXPasswordField fx:id="mdp" layoutX="55.0" layoutY="219.0" prefHeight="33.0" prefWidth="456.0" promptText="Mot de pass" unFocusColor="#735e9a" />
+      <JFXButton fx:id="connexion" buttonType="RAISED" layoutX="109.0" layoutY="315.0" onAction="#connexionButton" prefHeight="53.0" prefWidth="119.0" ripplerFill="WHITE" stylesheets="@login.css" text="connexion" textFill="#252424" />
+      <JFXButton fx:id="signup" buttonType="RAISED" layoutX="255.0" layoutY="318.0" onAction="#signupButton" prefHeight="53.0" prefWidth="119.0" ripplerFill="#fefdff" stylesheets="@login.css" text="s'inscrie" textFill="#1b1a1a" />
+      <ImageView fitHeight="89.0" fitWidth="97.0" layoutX="255.0" layoutY="22.0">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="fb" layoutX="435.0" layoutY="318.0" onAction="#fbButton" prefHeight="53.0" prefWidth="148.0" text="S'inscrire avec facebook" />
+   </children>
+</AnchorPane>

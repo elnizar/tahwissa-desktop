@@ -1,0 +1,20 @@
+.track {
+    -fx-background-color: transparent;
+    -fx-pref-width:15px;
+    -fx-border-color: transparent;
+}
+
+
+.thumb {
+    -fx-background-color: rgba(220,220,220,1);
+    -fx-border-width:1,1,1,1;
+    -fx-pref-width:15px;
+    -fx-border-color: transparent;
+}
+
+.increment-button,.increment-arrow,.decrement-arrow,.decrement-button,.corner{
+    -fx-background-color: transparent;
+    -fx-pref-width:15px;
+    -fx-border-color: transparent;
+}
+

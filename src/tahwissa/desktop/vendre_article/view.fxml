@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane0" prefHeight="444.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tahwissa.desktop.vendre_article.VenteController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="444.0" prefWidth="802.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXHamburger fx:id="hamburger" layoutX="920.0" layoutY="14.0" prefHeight="49.0" prefWidth="59.0" />
+            <JFXDrawer fx:id="drawer" prefHeight="451.0" prefWidth="167.0" />
+            <ImageView blendMode="MULTIPLY" fitHeight="576.0" fitWidth="993.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../bg.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXTabPane fx:id="contentPane" layoutX="234.0" prefHeight="559.0" prefWidth="679.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="234.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab fx:id="vendreTab" text="Vendre un article">
+               <content>
+                <AnchorPane fx:id="vendreContent" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="516.0" fitWidth="524.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../resources/img/form.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="libelleLab" layoutX="22.0" layoutY="29.0" text="Libelle" visible="false">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="prixLab" layoutX="22.0" layoutY="70.0" text="Prix" visible="false">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="etatLab" layoutX="22.0" layoutY="112.0" text="Etat" visible="false">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="descriptionLab" layoutX="18.0" layoutY="146.0" text="Description" visible="false">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="imageLab" layoutX="22.0" layoutY="416.0" text="Image d'Article" visible="false">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="libelle" labelFloat="true" layoutX="121.0" layoutY="25.0" prefHeight="25.0" prefWidth="193.0" promptText="Libelle" unFocusColor="#f2e9f7">
+                           <stylesheets>
+                              <URL value="@jfoenix-design.css" />
+                              <URL value="@jfoenix-fonts.css" />
+                           </stylesheets>
+                        </JFXTextField>
+                        <JFXTextField fx:id="prix" labelFloat="true" layoutX="120.0" layoutY="66.0" prefHeight="25.0" prefWidth="195.0" promptText="Prix" unFocusColor="#f2e9f7" />
+                        <JFXTextArea fx:id="description" labelFloat="true" layoutX="120.0" layoutY="181.0" prefHeight="172.0" prefWidth="209.0" promptText="Description" unFocusColor="#f2e9f7" />
+                        <JFXButton fx:id="upload" buttonType="RAISED" layoutX="120.0" layoutY="410.0" onAction="#fileChoosing" prefHeight="25.0" prefWidth="217.0" ripplerFill="#f5e5ff" text="Choisir une image .." />
+                        <JFXButton fx:id="lorem" buttonType="RAISED" layoutX="353.0" layoutY="470.0" onAction="#loremIpsum" style="-fx-background-color: #EDB1F1;" text="Lorem ipsum" />
+                        <JFXButton fx:id="ajouter" buttonType="RAISED" layoutX="38.0" layoutY="467.0" onAction="#ajouterArticle" prefHeight="30.0" prefWidth="167.0" style="-fx-background-color: #8EF6E4;" text="Ajouter" />
+                        <JFXComboBox fx:id="etat" labelFloat="true" layoutX="120.0" layoutY="108.0" prefHeight="25.0" prefWidth="197.0" promptText="Etat d'article" unFocusColor="#f2e9f7" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="myArticleTab" text="Mes articles">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXTreeTableView fx:id="articlesTableView" layoutX="103.0" prefHeight="512.0" prefWidth="660.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <columns>
+                              <TreeTableColumn fx:id="my_id" prefWidth="75.0" text="ID" />
+                              <TreeTableColumn fx:id="my_libelle" prefWidth="75.0" text="Libelle" />
+                              <TreeTableColumn fx:id="my_description" prefWidth="75.0" text="Description" />
+                              <TreeTableColumn fx:id="my_prix" prefWidth="75.0" text="Prix" />
+                              <TreeTableColumn fx:id="my_etat" prefWidth="75.0" text="Etat" />
+                              <TreeTableColumn fx:id="my_boost" prefWidth="75.0" text="Boosté" />
+                              <TreeTableColumn fx:id="my_vendu" prefWidth="75.0" text="Vendu" />
+                              <TreeTableColumn fx:id="my_images" prefWidth="75.0" text="Images" />
+                           </columns>
+                        </JFXTreeTableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="favTab" text="Ma list des favoris" />
+         </tabs>
+      </JFXTabPane>
+      <StackPane fx:id="stackPane" prefHeight="150.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+   <stylesheets>
+      <URL value="@jfoenix-design.css" />
+      <URL value="@jfoenix-fonts.css" />
+   </stylesheets>
+</AnchorPane>
